@@ -15,5 +15,11 @@ public class YatzyTest{
         assertEquals(2, yatzyGame.score(YatzyCategory.ONES, new int[] {6, 5, 2, 1, 1}));
     }
 
+    @Test
+    void ShouldScoreTwo(){
+        assertEquals(4, yatzyGame.score(YatzyCategory.TWOS, new int[] {1, 1, 2, 1, 1}));
+        assertEquals(2, yatzyGame.score(YatzyCategory.TWOS, new int[] {6, 5, 2, 1, 1}));
+    }
+
 
 }
