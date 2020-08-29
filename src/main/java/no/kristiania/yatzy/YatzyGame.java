@@ -11,7 +11,13 @@ public class YatzyGame {
                 result += die;
             }
             if (category == YatzyCategory.PAIR){
-                return 10;
+                for (int i = 0; i < dice.length; i++){
+                    for (int j = 0; j < dice.length; j++){
+                        if (i != j && dice[i] == dice[j]){
+                            return dice[i]*2;
+                        }
+                    }
+                }
             }
         }
         return result;
