@@ -7,7 +7,7 @@ public class YatzyGame {
         for (int die : dice){
             if(die == 1 && category == YatzyCategory.ONES){
                 result += die;
-            } else if (die == 2 && category == YatzyCategory.TWOS){
+            } else if(die == 2 && category == YatzyCategory.TWOS){
                 result += die;
             }
         }
